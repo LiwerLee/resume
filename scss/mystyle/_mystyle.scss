@@ -1,119 +1,167 @@
-$border: 3px solid;
-
-* {
-  box-sizing: border-box;
-}
-
 body {
   width: 100%;
-  background: url(../images/bg.jpg) no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
 }
 
-.container {
-  width: 75%;
+.flex {
+  height: 10vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  background-color: rgba(117, 111, 119, 0.74);
+  font-size: 40px;
+  line-height: 40px;
+
+  p {
+    font-family: "Playball";
+    margin: 0 auto 0 10px;
+  }
+
+  ul {
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+    li {
+      float: left;
+      list-style-type: none;
+      margin-left: 40px;
+      padding: 0;
+      a {
+        display: block;
+        font-size: 25px;
+        line-height: 45px;
+        margin: 0;
+        &:focus {
+          text-decoration: none;
+          color: #337ab7;
+        }
+        text-decoration: none;
+        &:visited {
+          text-decoration: none;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+        &:active {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.container1 {
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/bg1.jpg) no-repeat;
+  background-size: cover;
+  p {
+    color:rgb(19, 246, 7);
+  }
+  .textbox {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    position: relative;
+    top: 40%;
+  }
+}
+
+.container2 {
+  padding: 20px;
+  .row {
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  h1{
+    margin-top: 0;
+  }
+
+  .title {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    border: 2px solid black;
+    width: 240px;
+    height: 60px;
+    line-height: 60px;
+    p {
+      margin: 0;
+      width: 120px;
+      font-size: 14px;
+      position: absolute;
+      top: -8px;
+      left: 60px;
+      line-height: 14px;
+      display: block;
+      background-color: white;
+    }
+  }
+
+  img {
+    max-width: 335px;
+    max-height: 400px;
+  }
+
+}
+
+.container3 {
+  @extend .container2;
+  background-color: rgb(175, 208, 231);
+  .logobox {
+    .title {
+      width: 445px;
+      height:70px;
+    }
+    p {
+      width: 135px;
+      top: -8px;
+      left: 150px;
+      background-color: rgb(175, 208, 231);
+    }
+  }
+  .sktit {
+    font-size: 18px;
+    padding: 0 !important;
+    text-align: right;
+    line-height: 30px;
+    position: relative;
+    top: -5px;
+  }
+}
+
+footer {
+  height: 22vh;
+  background-color: rgba(49, 46, 50, 0.74);
+  color: white;
+  text-align: center;
+  line-height: 22vh;
+}
+
+
+//全域
+.canvas{
+  display: block;
   margin: 0 auto;
 }
 
-.header {
-  height: 200px;
-}
-
-.headerRight, .mainLeft {
-  background-color: rgba(107, 196, 219, .5);
-}
-
-.headerLeft, .mainRight {
-  background-color: rgba(255, 255, 255, .6);
-}
-
-.headerRight {
-  border-right: $border;
-  border-radius: 0 30px 0 0;
-  font-family: 'Playball', cursive;
-  font-size: 100px;
-  line-height: 200px;
-  padding-left: 4%;
-}
-
-.headerLeft {
-  border-left: $border;
-  border-radius: 30px 0 0 0;
-}
-
-.headerLeft, .headerRight {
-  border-top: $border;
-  height: 200px;
-}
-
-.mainLeft, .mainRight {
-  border-bottom: $border;
-  height: 1000px;
-}
-
-.mainLeft {
-  border-left: $border;
-  border-radius: 0 0 0 30px;
-}
-
-.mainRight {
-  border-right: $border;
-  border-radius: 0 0 30px 0;
-}
-
-.picbox {
-  height: 352px;
-  position: relative;
-  text-align: center;
-}
-
-img {
-  max-width: 60%;
-  max-height: 80%;
-  position: relative;
-  top: 20%;
-}
-
-.textbox1 {
-  padding-top: 6%;
-  padding-left: 0;
-}
-
-.textbox1 p {
+.pleft {
   font-size: 20px;
+  padding: 40px;
+  text-align: left !important;
+}
+
+.pmid {
+  font-size: 20px;
+  margin-top: 20px;
   line-height: 60px;
-}
-
-.gray {
-  font-size: 16px;
-  color: rgb(96, 93, 94);
-}
-@media (max-width: 995px) {
-  .headerLeft, .mainLeft {
-    display: none;
-  }
-  .headerRight {
-    text-align: center;
-    border-left: $border;
-    border-radius: 30px 30px 0 0;
-  }
-  .mainRight {
-    border-left: $border;
-    border-radius: 0 0 30px 30px;
-  }
-
-  .container {
-    width: 100%;
-  }
-
-  body {
-    background-size: 250%;
-  }
-}
-
-@media (max-width: 768px) {
-  .textbox1 {
-    text-align: center;
-  }
 }
