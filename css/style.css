@@ -6691,7 +6691,7 @@ nav {
     line-height: 60px; }
     .container2 .title p, .container3 .title p {
       margin: 0;
-      width: 120px;
+      width: 115px;
       font-size: 14px;
       position: absolute;
       top: -8px;
@@ -6709,9 +6709,9 @@ nav {
     width: 365px;
     height: 125px; }
   .container3 .logobox p {
-    width: 138px;
+    width: 120px;
     top: -8px;
-    left: 115px;
+    left: 120px;
     background-color: #afd0e7; }
   .container3 .soft {
     margin-top: 70px; }
