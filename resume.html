@@ -2,25 +2,48 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Resume</title>
+    <title>Liwer's Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <nav>
+    <!-- <nav class="navbar-fixed-top">
       <div class="flex">
         <p>Liwer's Resume</p>
-        <ul>
+        <ul class="viewM">
           <li><a id="a_about" href="#">ABOUT</a></li>
           <li><a id="a_knowledge"href="#">KNOWLEDGE</a></li>
           <li><a id="a_skills"href="#">SKILLS</a></li>
-          <li><a id="a_top" href="#">TOP</a></li>
         </ul>
       </div>
+    </nav> -->
+
+    <nav class="nav navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p class="navbar-brand" href="#">Liwer's Resume</p>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a id="a_about" href="#">ABOUT</a></li>
+                    <li><a id="a_knowledge" href="#">KNOWLEDGE</a></li>
+                    <li><a id="a_skills" href="#">SKILLS</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <div class="container1" id="top">
+
+
+
+    <div class="container1">
       <div class="textbox">
         <div id="reply_comment">
 
@@ -42,25 +65,33 @@
           <p>姓名：李尚儒</p>
           <p>年齡：26</p>
           <p>最高學歷：東吳大學 心理系</p>
-          <p>主修：消費者心理學</p>
-          <p>經歷：廣告AE <span class="gray">(2013.2 - 2013.6)</span></p>
+          <p>主修：認知心理學, 消費者心理學</p>
+          <p>Phone：0987-400-150</p>
+          <p>E-mail：liwer0413@gmail.com</p>
         </div>
         <div class="col-md-4 col-xs-12">
-          <h1>Profile</h1>
-          <p class="pleft">在同學會一次偶然的機會下, 與從事網頁工程師的國中同學有所接觸, 被它那視窗從無到有的敲指技能所吸引, 加上自己以前就是就讀資訊科系, 對電腦的熱愛又重新燃燒起來 , 決定開始從前端工程師開始, 經國中同學的指導與自行摸索學習, 認識了一些基本Framework, ,Plugin, HTML, CSS, JQuery, 版本控制GitHub, 喜歡 Follow 技術面的社團.</p>
+          <h1 class="hleft">Profile</h1>
+          <p class="pleft">
+            經歷了一段打工生活, 在一次因緣際會下,
+            與從事網頁工程師的國中同學有所接觸,
+            慢慢開始認識了編寫程式, 覺得很有趣,
+            就買了幾本書開始了我的前端自學之路,
+            經國中同學的指導與自行摸索學習, 認識了一些基本的HTML, CSS, javascript, bootstrap等,
+            未來也希望接觸AngularJS, ReactJs等等的其他技術。
+          </p>
         </div>
       </div>
     </div>
 
     <div id="knowledge" class="container3">
       <div class="row logobox">
-        <h1 class="title"><p>WHAT I’M BEST AT?</p>SKILLS & KNOWLEDGE</h1>
+        <h1 class="title"><p>WHAT I’M GOOD AT?</p>SKILLS & KNOWLEDGE</h1>
       </div>
       <div class="row">
         <div class="col-md-6">
           <h1>Software</h1>
-          <div class="row">
-            <div class="col-md-3 col-xs-3 sktit">
+          <div class="row soft">
+            <div class="col-md-3 col-xs-3 softL">
               <p>Word</p>
               <p>Excel</p>
               <p>PowerPoint</p>
@@ -88,11 +119,18 @@
         </div>
         <div class="col-md-6">
           <h1>Knowledge</h1>
-          <p class="pleft">由之前工作做關係有些許使用到一些文書處理工具, 至於影像處理與網頁技術層面, 則是藉由臉書社團和國中同學分享, 才有所認識, 曾經自行使用過 ajax gulp sass jade 等工具做過簡單的實測, 未來還想學習更多 Framework做開發, 像是：A-Frame, AngularJS, ReactJs..等等.</p>
+          <p class="pleft">大學主要從事品牌的研究,
+            對於品牌認知成型結構以及人因工程(UI/UX),
+            有一定的了解，使用SPSS軟體進行消費者行為的分析,
+            畢業後的第一份正式工作做的是廣告AE,
+            進而提升文書處理軟體的熟練度,
+            自己也嘗試使用過ajax, sass, Jquery, git做開發,
+            空閒時也嘗試抓網路上的板來模仿學習。
+          </p>
         </div>
       </div>
-      <div class="row">
-        <h1 id="skills"class="col-md-12">Web Skills</h1>
+      <div id="skills" class="row">
+        <h1 class="col-md-12">Web Skills</h1>
       </div>
       <div class="row">
         <div class="col-md-3">
@@ -118,7 +156,8 @@
     </footer>
 
   </body>
-  <script src="JS/jquery-3.1.1.js" charset="utf-8"></script>
-  <script src="JS/canvas.js" charset="utf-8"></script>
-  <script src="JS/index.js" charset="utf-8"></script>
+  <script src="js/jquery-3.1.1.js" charset="utf-8"></script>
+  <script src="js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="js/canvas.js" charset="utf-8"></script>
+  <script src="js/index.js" charset="utf-8"></script>
 </html>

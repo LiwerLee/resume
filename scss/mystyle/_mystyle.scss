@@ -2,64 +2,32 @@ body {
   width: 100%;
 }
 
-.flex {
-  height: 10vh;
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+
+
+.row {
+  width: 100%;
 }
 
 nav {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  width: 100vw;
-  height: 10vh;
-  background-color: rgba(117, 111, 119, 0.74);
-  font-size: 40px;
-  line-height: 40px;
 
-  p {
+  opacity: .8;
+
+  .navbar-brand {
     font-family: "Playball";
-    margin: 0 auto 0 10px;
+    font-size: 40px;
+    line-height: 30px;
+
   }
 
-  ul {
-    margin: 0 10px 0 0;
-    vertical-align: middle;
-    li {
-      float: left;
-      list-style-type: none;
-      margin-left: 40px;
-      padding: 0;
-      a {
-        display: block;
-        font-size: 25px;
-        line-height: 45px;
-        margin: 0;
-        &:focus {
-          text-decoration: none;
-          color: #337ab7;
-        }
-        text-decoration: none;
-        &:visited {
-          text-decoration: none;
-        }
-        &:hover {
-          text-decoration: none;
-        }
-        &:active {
-          text-decoration: none;
-        }
-      }
-    }
+  a {
+    font-size: 20px;
+    line-height: 30px !important;
   }
+
 }
 
 .container1 {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: url(../images/bg1.jpg) no-repeat;
   background-size: cover;
@@ -123,13 +91,16 @@ nav {
       height:70px;
     }
     p {
-      width: 135px;
+      width: 138px;
       top: -8px;
       left: 150px;
       background-color: rgb(175, 208, 231);
     }
   }
-  .sktit {
+  .soft {
+    margin-top: 70px;
+  }
+  .softL {
     font-size: 18px;
     padding: 0 !important;
     text-align: right;
@@ -138,13 +109,20 @@ nav {
     top: -5px;
   }
 }
+#skills {
+  padding-top: 60px;
+  margin-top: 0;
+}
 
 footer {
-  height: 22vh;
+  height: 16vh;
   background-color: rgba(49, 46, 50, 0.74);
   color: white;
   text-align: center;
-  line-height: 22vh;
+  line-height: 15vh;
+  p {
+    margin: 0;
+  }
 }
 
 
@@ -154,10 +132,12 @@ footer {
   margin: 0 auto;
 }
 
+
+
 .pleft {
   font-size: 20px;
   padding: 40px;
-  text-align: left !important;
+  text-align: justify !important;
 }
 
 .pmid {
