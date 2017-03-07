@@ -15,8 +15,10 @@
 
 
 
+
+
     <nav class="nav navbar-default navbar-fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
@@ -38,17 +40,20 @@
 
 
 
-    <div id="top"   class="container1">
+    <div id="top"   class="container1 container-fluid">
       <div class="textbox">
         <p id="autotype">Hi , I Am Liwer.</br>I Am A Junior Front End Engineer.</p>
       </div>
     </div>
 
-    <div class="container2" id="about">
-      <div class="row logobox">
-          <h1 class="title"><p>what's my name?</p>ABOUT</h1>
+    <div class="container2 container-fluid" id="about">
+      <div class="row myrow">
+        <div class="logobox">
+          <p class="logotext">what's my name?</p>
+          <h1 class="title">ABOUT</h1>
+        </div>
       </div>
-      <div class="row">
+      <div class="row myrow">
         <div class="col-md-4 col-xs-12">
           <img src="images/pic.jpg" alt="">
         </div>
@@ -74,14 +79,17 @@
       </div>
     </div>
 
-    <div id="knowledge" class="container3">
-      <div class="row logobox">
-        <h1 class="title"><p>What I’m good at?</p>KNOWLEDGE</br>&SKILLS</h1>
+    <div id="knowledge" class="container2 container3 container-fluid">
+      <div class="myrow row">
+        <div class="logobox">
+          <p class="logotext">What I’m good at?</p>
+          <h1 class="title">KNOWLEDGE</br>&SKILLS</h1>
+        </div>
       </div>
-      <div class="row">
+      <div class="myrow row">
         <div class="col-md-6">
           <h1>Software</h1>
-          <div class="row soft">
+          <div class="row myrow soft">
             <div class="col-md-3 col-xs-3 softL">
               <p>Word</p>
               <p>Excel</p>
@@ -120,10 +128,10 @@
           </p>
         </div>
       </div>
-      <div id="skills" class="row">
+      <div id="skills" class="row myrow">
         <h1 class="col-md-12">Web Skills</h1>
       </div>
-      <div class="row">
+      <div class="row myrow">
         <div class="col-md-3">
           <h2 class="col-md-12">HTML</h2>
           <canvas class="canvas col-md-12" id="canvas1" width="300" height="300"></canvas>
@@ -145,9 +153,6 @@
     <footer>
       <p>Copyright © 2017 Liwer's Resume All Rights Reserved.</p>
     </footer>
-
   </body>
-
-  <script src="js/canvas.js" charset="utf-8"></script>
   <script src="js/index.js" charset="utf-8"></script>
 </html>

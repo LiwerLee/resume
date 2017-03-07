@@ -1,6 +1,6 @@
 
-.row {
-  width: 100%;
+.myrow {
+  width: auto;
 }
 
 nav {
@@ -23,7 +23,7 @@ nav {
 }
 
 .container1 {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: url(../images/bg.jpg) no-repeat;
   background-size: cover;
@@ -41,35 +41,22 @@ nav {
 
 .container2 {
   padding: 20px;
-  .row {
+
+  .logobox {
+    text-align: center;
+  }
+  .myrow {
     margin: 50px auto;
     text-align: center;
   }
+
+
 
   h2 {
     margin-top: 35px;
   }
 
-  .title {
-    display: inline-block;
-    position: relative;
-    margin: 0 auto;
-    border: 2px solid black;
-    width: 240px;
-    height: 60px;
-    line-height: 60px;
-    p {
-      margin: 0;
-      width: 115px;
-      font-size: 14px;
-      position: absolute;
-      top: -8px;
-      left: 60px;
-      line-height: 14px;
-      display: block;
-      background-color: white;
-    }
-  }
+
 
   img {
     max-width: 335px;
@@ -79,20 +66,17 @@ nav {
 }
 
 .container3 {
-  @extend .container2;
+
   background-color: rgb(175, 208, 231);
-  .logobox {
-    .title {
-      width: 300px;
-      height: 120px;
-    }
-    p {
-      width: 120px;
-      top: -8px;
-      left: 95px;
-      background-color: rgb(175, 208, 231);
-    }
+
+
+  .logotext {
+    width: 120px;
+    background-color: rgb(175, 208, 231);
   }
+
+
+
   .soft {
     margin-top: 70px;
   }
@@ -128,7 +112,25 @@ footer {
   margin: 0 auto;
 }
 
+.title {
+  display: inline-block;
+  padding: 10px 30px 5px 30px;
+  margin: 0 auto;
+  border: 2px solid black;
+  line-height: 36px;
+  vertical-align: middle;
+}
 
+.logotext {
+  margin: 0 auto;
+  top: 8px;
+  font-size: 14px;
+  position: relative;
+  width: 115px;
+  line-height: 14px;
+  display: block;
+  background-color: white;
+}
 
 .pleft {
   font-size: 20px;
