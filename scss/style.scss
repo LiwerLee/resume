@@ -23,6 +23,7 @@ nav {
 
 .container1 {
   width: 100%;
+  height: 100vw;
   background: url(../images/bg.jpg) no-repeat;
   background-size: cover;
   p {
@@ -119,7 +120,7 @@ footer {
 .logotext {
   margin: 0 auto;
   top: 8px;
-  width: 125px;
+  width: 120px;
   font-size: 14px;
   position: relative;
   line-height: 14px;
