@@ -106,6 +106,9 @@ footer {
 .canvas{
   display: block;
   margin: 0 auto;
+  @media (max-width:768px){
+    transform: scale(0.7);
+  }
 }
 
 .title {

@@ -64,6 +64,9 @@ footer {
 .canvas {
   display: block;
   margin: 0 auto; }
+  @media (max-width: 768px) {
+    .canvas {
+      transform: scale(0.7); } }
 
 .title {
   display: inline-block;
