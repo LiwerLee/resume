@@ -29,8 +29,6 @@ nav {
   padding: 20px; }
   .container2 .logobox {
     text-align: center; }
-  .container2 .skills {
-    padding-top: 40px; }
   .container2 h2 {
     margin-top: 35px; }
   .container2 img {
@@ -42,6 +40,8 @@ nav {
   .container3 .logotext {
     width: 120px;
     background-color: #afd0e7; }
+  .container3 .skills {
+    padding-top: 40px; }
   .container3 .soft {
     margin-top: 70px; }
   .container3 .softL {
