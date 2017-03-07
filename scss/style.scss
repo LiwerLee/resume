@@ -11,14 +11,17 @@ nav {
     font-family: "Playball";
     font-size: 40px;
     line-height: 30px;
+    @media (max-width: 768px){
+      font-size: 25px;
+      line-height: 15px;
 
+
+    }
   }
-
   a {
     font-size: 20px;
-    line-height: 30px !important;
-  }
-
+    line-height: 20px !important;
+    }
 }
 
 .container1 {

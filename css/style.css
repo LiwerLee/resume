@@ -7,9 +7,13 @@ nav {
     font-family: "Playball";
     font-size: 40px;
     line-height: 30px; }
+    @media (max-width: 768px) {
+      nav .navbar-brand {
+        font-size: 25px;
+        line-height: 15px; } }
   nav a {
     font-size: 20px;
-    line-height: 30px !important; }
+    line-height: 20px !important; }
 
 .container1 {
   width: 100%;
