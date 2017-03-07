@@ -45,11 +45,10 @@ nav {
   .logobox {
     text-align: center;
   }
-  .myrow {
-    margin: 50px auto;
-    text-align: center;
-  }
 
+  .skills {
+    padding-top: 40px;
+  }
 
 
   h2 {
@@ -89,6 +88,7 @@ nav {
     top: -5px;
   }
 }
+
 
 
 footer {
@@ -139,4 +139,9 @@ footer {
   font-size: 20px;
   margin-top: 20px;
   line-height: 60px;
+}
+
+.myrow {
+  margin: 50px auto;
+  text-align: center;
 }

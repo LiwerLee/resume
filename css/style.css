@@ -29,9 +29,8 @@ nav {
   padding: 20px; }
   .container2 .logobox {
     text-align: center; }
-  .container2 .myrow {
-    margin: 50px auto;
-    text-align: center; }
+  .container2 .skills {
+    padding-top: 40px; }
   .container2 h2 {
     margin-top: 35px; }
   .container2 img {
@@ -93,5 +92,9 @@ footer {
   font-size: 20px;
   margin-top: 20px;
   line-height: 60px; }
+
+.myrow {
+  margin: 50px auto;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
