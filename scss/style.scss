@@ -1,3 +1,143 @@
-@import "helper/bootstrap";
-@import "helper/bootstrap-theme";
-@import "mystyle/mystyle";
+
+.row {
+  width: 100%;
+}
+
+nav {
+
+
+  opacity: .8;
+
+  .navbar-brand {
+    font-family: "Playball";
+    font-size: 40px;
+    line-height: 30px;
+
+  }
+
+  a {
+    font-size: 20px;
+    line-height: 30px !important;
+  }
+
+}
+
+.container1 {
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/bg.jpg) no-repeat;
+  background-size: cover;
+  p {
+    color:rgb(19, 246, 7);
+  }
+  .textbox {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    position: relative;
+    top: 40%;
+  }
+}
+
+.container2 {
+  padding: 20px;
+  .row {
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: 35px;
+  }
+
+  .title {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    border: 2px solid black;
+    width: 240px;
+    height: 60px;
+    line-height: 60px;
+    p {
+      margin: 0;
+      width: 115px;
+      font-size: 14px;
+      position: absolute;
+      top: -8px;
+      left: 60px;
+      line-height: 14px;
+      display: block;
+      background-color: white;
+    }
+  }
+
+  img {
+    max-width: 335px;
+    max-height: 400px;
+  }
+
+}
+
+.container3 {
+  @extend .container2;
+  background-color: rgb(175, 208, 231);
+  .logobox {
+    .title {
+      width: 300px;
+      height: 120px;
+    }
+    p {
+      width: 120px;
+      top: -8px;
+      left: 95px;
+      background-color: rgb(175, 208, 231);
+    }
+  }
+  .soft {
+    margin-top: 70px;
+  }
+  .softL {
+    font-size: 18px;
+    padding: 0 !important;
+    text-align: right;
+    line-height: 30px;
+    position: relative;
+    top: -5px;
+  }
+}
+#skills {
+  padding-top: 60px;
+  margin-top: 0;
+}
+
+footer {
+  height: 16vh;
+  background-color: rgba(49, 46, 50, 0.74);
+  color: white;
+  text-align: center;
+  line-height: 15vh;
+  p {
+    margin: 0;
+  }
+}
+
+
+//全域
+.canvas{
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.pleft {
+  font-size: 20px;
+  padding: 40px;
+  text-align: justify !important;
+}
+
+.pmid {
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 60px;
+}
