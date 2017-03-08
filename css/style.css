@@ -90,7 +90,7 @@ footer {
   background-color: white; }
   @media (max-width: 768px) {
     .logotext {
-      width: 140px;
+      width: 200px;
       font-size: 4px;
       line-height: 4px;
       top: 4px; } }
