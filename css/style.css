@@ -90,8 +90,7 @@ footer {
   background-color: white; }
   @media (max-width: 768px) {
     .logotext {
-      font-size: 6px;
-      line-height: 6px; } }
+      width: 140px; } }
 
 .pleft {
   font-size: 20px;
