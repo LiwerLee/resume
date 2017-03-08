@@ -14,8 +14,6 @@ nav {
     @media (max-width: 768px){
       font-size: 25px;
       line-height: 15px;
-
-
     }
   }
   a {
@@ -132,6 +130,10 @@ footer {
   line-height: 14px;
   display: block;
   background-color: white;
+  @media (max-width: 768px){
+    font-size: 10px;
+    line-height: 10px
+  }
 }
 
 .pleft {
