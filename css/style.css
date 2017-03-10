@@ -91,9 +91,8 @@ footer {
   @media (max-width: 768px) {
     .logotext {
       width: 140px;
-      font-size: 4px;
-      line-height: 4px;
-      top: 4px; } }
+      font-size: 10px;
+      line-height: 10px; } }
 
 .pleft {
   font-size: 20px;
