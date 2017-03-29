@@ -1,5 +1,5 @@
 body {
-  width: 100%;
+  width: 100vw;
 }
 
 nav {
@@ -75,10 +75,6 @@ nav {
     background-color: rgb(175, 208, 231);
   }
 
-  .skills {
-    padding-top: 40px;
-  }
-
   .soft {
     margin-top: 70px;
   }
@@ -95,6 +91,7 @@ nav {
 
 
 footer {
+  width: 100vw;
   height: 16vh;
   background-color: rgba(49, 46, 50, 0.74);
   color: white;
@@ -134,7 +131,7 @@ footer {
     width: 130px;
     font-size: 10px;
     line-height: 10px;
-    top: 6px;   
+    top: 6px;
   }
 }
 
@@ -153,4 +150,10 @@ footer {
 .myrow {
   margin: 50px auto;
   text-align: center;
+}
+
+.works {
+  max-width: 100%;
+  max-height: 100%;
+  border: 5px solid #000;
 }

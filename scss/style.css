@@ -1,5 +1,5 @@
 body {
-  width: 100vw; }
+  width: 100%; }
 
 nav {
   opacity: .8; }
@@ -46,6 +46,8 @@ nav {
   background-color: #afd0e7; }
   .container3 .logotext {
     background-color: #afd0e7; }
+  .container3 .skills {
+    padding-top: 40px; }
   .container3 .soft {
     margin-top: 70px; }
   .container3 .softL {
@@ -57,7 +59,6 @@ nav {
     top: -5px; }
 
 footer {
-  width: 100vw;
   height: 16vh;
   background-color: rgba(49, 46, 50, 0.74);
   color: white;
@@ -107,10 +108,5 @@ footer {
 .myrow {
   margin: 50px auto;
   text-align: center; }
-
-.works {
-  max-width: 100%;
-  max-height: 100%;
-  border: 5px solid #000; }
 
 /*# sourceMappingURL=style.css.map */

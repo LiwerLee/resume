@@ -1,4 +1,4 @@
-
+$(document).ready(function(){
 
 //打字機效果
 	$.fn.autotype = function(){
@@ -38,7 +38,7 @@
 	$('#a_top').click(function(){ $('html,body').animate({scrollTop:$('#top').offset().top}, 1000); });
 	$('#a_about').click(function(){ $('html,body').animate({scrollTop:$('#about').offset().top}, 1000); });
 	$('#a_knowledge').click(function(){ $('html,body').animate({scrollTop:$('#knowledge').offset().top}, 1000); });
-	$('#a_skills').click(function(){ $('html,body').animate({scrollTop:$('#skills').offset().top}, 1000); });
+	$('#a_myWorks').click(function(){ $('html,body').animate({scrollTop:$('#myWorks').offset().top}, 1000); });
 
 //canvas百分比
 
@@ -138,3 +138,4 @@ var timer4 = setInterval(function () {
         context.fillText(n.toFixed(0)+"%", centerX-53, centerY+20);
         context.restore();
     }
+});
