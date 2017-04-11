@@ -36,6 +36,7 @@ $(document).ready(function(){
 	setTimeout(function(){
 		$('html,body').animate({scrollTop:$('#about').offset().top}, 1000);
 	},6000);
+
 //頁面滾動
 	$('#a_top').click(function(){ $('html,body').animate({scrollTop:$('#top').offset().top}, 1000); });
 	$('#a_about').click(function(){ $('html,body').animate({scrollTop:$('#about').offset().top}, 1000); });
